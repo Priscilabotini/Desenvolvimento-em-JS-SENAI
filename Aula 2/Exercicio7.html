@@ -7,21 +7,52 @@
 </head>
 <body>
 
-<table border="2"= style="border: crimson;">
+<h1>Cadastro de Produtos</h1>
 
-    <tr>
-    
+    <form>
+        <label>Nome do Produto:
+            <input type="text" name="nome"><br>
+        
+        <label>Preço:
+            <input type="number" name="preco"><br>
+        
+        <label>Quantidade:
+            <input type="number" name="quantidade"><br>
+        
+        <button> BOTÃO </button>
+    </form>
 
-        <th>Nome></th>
-        <th>Idade>/th
-        <th>Curso</th>
-
-
-    </tr>
-
-
-
-
-</table>
+    <h2>Produtos Cadastrados</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>BATOM</td>
+                <td>10,00</td>
+                <td>2</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>MÁSCARA DE CÍLIO</td>
+                <td>15,00</td>
+                <td>3</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>PROTETOR SOLAR</td>
+                <td>80,00</td>
+                <td>2</td>
+                <td>160</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
+
