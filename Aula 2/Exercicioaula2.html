@@ -1,35 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
 
-   <form>
+<h1>Cadastro de Produtos</h1>
 
-    
-        <label>Lista de produto:</label>
-        <input type="text" placeholder="Digite o nome do produto"><br>
+    <form>
+        <label>Nome do Produto:
+            <input type="text" name="nome"><br>
         
-        <label>Valor do produto:</label>
-        <input type="number" placeholder="Digite o valor do produtor"><br>
-        <label>Lista de produto:</label>
-        <input type="text" placeholder="Digite o nome do produto"><br>
-        <label>Valor do produto:</label>
-        <input type="number" placeholder="Digite o valor do produtor"><br>
-
+        <label>Preço:
+            <input type="number" name="preco"><br>
         
+        <label>Quantidade:
+            <input type="number" name="quantidade"><br>
         
-    
-    
-       <button>clique</button>
+        <button> BOTÃO </button>
+    </form>
 
-
-
-
-     </form>
+    <h2>Produtos Cadastrados</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>BATOM</td>
+                <td>10,00</td>
+                <td>2</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>MÁSCARA DE CÍLIO</td>
+                <td>15,00</td>
+                <td>3</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>PROTETOR SOLAR</td>
+                <td>80,00</td>
+                <td>2</td>
+                <td>160</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
+
+    
+      
