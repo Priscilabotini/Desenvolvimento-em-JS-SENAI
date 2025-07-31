@@ -1,0 +1,35 @@
+:root{
+--bg-color:#ffffff;
+--text-color: #000;
+--primaria: #3498db;
+--espaco :150px; 
+--esp : 50px;
+}
+
+
+body{
+
+
+background-color: var(--bg-color, red);
+color: var(--text-color);
+transition: all 0.3s;
+}
+
+
+.conteudo{
+    background-color: aqua;
+    padding: calc(var( --esp) - var(--espaco));
+
+
+}
+
+
+
+#btn{
+
+
+ background-color:var(--primaria) ;
+ 
+
+
+}
