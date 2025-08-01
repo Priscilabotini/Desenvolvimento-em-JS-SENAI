@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+
+<style>
+
+:root{
+
+--bg-color:#aeb4a9ff;
+--text-color:#fff;
+--card-color:#0c4767ff;
+--bt-color:#fa7921ff;
+--pri:red;
+--ed:#11b133;
+--gi:#f121e7;
+--fa:#7c787c;
+
+
+
+
+}
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background: var(--card-color);
+color: var(--text-color);
+padding: 20px;
+
+}
+
+.container{
+
+gap:15px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250,1fr));
+
+padding: 20px;
+border-radius: 8px;
+margin-top: 20px;
+
+background: var(--text-color);
+
+
+
+}
+
+.card{
+
+   background:var(--bt-color);
+   padding: 10px;
+   border-radius: 15px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+@media(max-width: 500px){
+
+  .container{
+   grid-template-columns: 1fr;
+   margin-top: 5px;
+   padding: 8px;
+
+  }
+.card{
+    grid-template-columns: 1fr;
+    padding: 5px;
+
+}
+
+p{
+ 
+font-size: 5px;
+grid-template-columns: 1fr;
+
+}
+
+h2{
+
+    font-size: 10px;
+
+}
+
+
+}
+
+
+</style>    
+
+</head>
+
+
+
+
+
+
+<body>
+
+    <div class="container">
+        <div class="card">
+         <h2>CARD 1</h2>
+         <p>dasjdkasjdklsajkdjaklsjdlkasdjaskldjaskdjaskjd
+            askdlçaskdlçaskdlkasçldklçaskdlaskdççkdlasçldkç
+         </p>
+            
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="card">
+         <h2>CARD 2</h2>
+         <p>PRISCILA <br>BOTINI
+
+         </p>
+            
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="card">
+         <h2>CARD 3</h2>
+         <p>GIOVANNA <br>BOTINI
+         </p>
+            
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="card">
+         <h2>CARD 4</h2>
+         <p>EDVALDO <br>BOTINI
+         </p>
+            
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="card">
+         <h2>CARD 5</h2>
+         <p>FABIO <br>VIEIRA
+         </p>
+            
+        </div>
+
+    </div>
+    
+    
+    
+    
+</body>
+</html>

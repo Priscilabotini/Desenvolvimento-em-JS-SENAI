@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+<style>
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+background-color: aqua;
+border: 2px solid coral;
+padding: 15px;
+flex:1 1 200px; /*Responsividade automatica*/   
+text-align: center;
+}
+
+
+/*Celular*/
+@media (max-width:600px){
+
+.box{
+
+  flex: 1 1 100%;/*Ocupa a linha inteira*/
+
+}
+
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+    <header>Teste Resposividade</header>
+
+    <div class="container">
+
+     <div class="box">Caixa 1</div>
+     <div class="box">Caixa 2</div>
+     <div class="box">Caixa 3</div>
+
+    </div>
+    
+
+</body>
+</html>
