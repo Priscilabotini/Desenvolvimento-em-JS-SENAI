@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script2.js"></script>
+    <title>Testando Javascript</title>
+</head>
+<body>
+<h1>Método Básico de Saídas com o JS</h1>
+
+
+<!-- vai interagir com o ambiente de teste -->
+<button onclick="console.log('Mensagem no Console')">console.log()</button>
+<!-- interagir com caixas de alerta da página -->
+<button onclick="alert('Alerta')">Alert()</button>
+<!-- vai interagir com o corpo da página -->
+<button onclick="document.write('<h2> Documento Subscrito</h2>')">Document.Write()</button>
+<!-- vai  interagir com o corpo da página -->
+<button onclick="document.getElementByid('demo').innerHTML = 'Texto alterado'">innerHTML</button>
+
+<p id="demo"> Texto que vai ser alterado </p>
+
+</body>
+<script>
+
+console.log('Página carregada')
+document.write('<p> Adicionar durante carregamento </p>')
+
+</script>
+</html>
