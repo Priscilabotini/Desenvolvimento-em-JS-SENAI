@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semafaro</title>
+
+</head>
+
+<style>
+body{
+    display:flex;
+    background-color:#444;
+    justify-content: center;
+    height:  100vh;
+    align-items:center;
+    margin:0;
+    
+
+}
+
+
+
+.Semafaro{
+    width: 100px;
+    background: #333;
+    padding:30px;
+    border-radius: 30%;
+    
+    
+}
+
+
+
+.luz{
+    width: 80px;
+    height: 80px;
+    background: #333;
+    padding:30px;
+    border-radius: 50%;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+    
+<div class= 'Semafaro' onclick="
+    
+  if(document.getElementById('vermelho').style.background == 'red'){
+    document.getElementById('vermelho').style.background = '#444';
+    document.getElementById('amarelo').style.background = 'yellow';
+  
+
+
+}else if(document.getElementById('amarelo').style.background == 'yellow'){
+        document.getElementById('amarelo').style.background = '#444';
+        document.getElementById('verde').style.background = 'green';
+
+
+}else {
+    document.getElementById('verde').style.background = '#444';
+    document.getElementById('vermelho').style.background = 'red';
+}
+ 
+
+
+   
+
+
+">
+</div>
+
+<div id="vermelho" class="luz"> </div>
+<div id="amarelo" class="luz"> </div>
+<div id="verde" class="luz"> </div>
+
+
+
+
+</body>
+</html>
