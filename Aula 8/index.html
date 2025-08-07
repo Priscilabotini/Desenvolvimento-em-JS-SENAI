@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="script.js"></script>
+<title>Document</title>
+<style>
+.cor_op{
+
+    display: inline-block;
+    width: 20px;
+    border: 1px solid orange;
+    height: 20px;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+
+<!-- input do texto  -->
+
+<textarea  id="area_texto" placeholder="DIGITE UM TEXTO:"></textarea>
+
+<!-- alterar a cor do texto -->
+<div class="cor_op" style="background:red;" onclick="document.getElementById('area_texto').style.color = 'red'"></div>
+<div class="cor_op" style="background: green;"onclick="document.getElementById('area_texto').style.color = 'green'"></div>
+<div class="cor_op" style="background: yellow;"onclick="document.getElementById('area_texto').style.color = 'yellow'"></div>
+<div class="cor_op" style="background: black;"onclick="document.getElementById('area_texto').style.color = 'black'"></div>
+
+
+<!-- botões para mostrar o texto e apagar o texto  -->
+
+<button class="mostra" onclick="
+document.getElementsById('mostrar_texto').innerHTML = document.getElementById('area_texto').value 
+">Mostrar</button>
+
+
+
+<button class="apagar" onclick="
+document.getElementById('mostrar_texto').innerHTML = ''
+">apagar</button>
+
+
+
+<!-- mostrar a mensagem aqui -->
+<h2>O texto vai ser mostrado aqui: </h2>
+<div id="mostrar_texto"></div>
+    
+</body>
+</html>
