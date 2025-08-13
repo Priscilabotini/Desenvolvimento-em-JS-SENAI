@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificar Número</title>
+</head>
+<body>
+
+  <h2>Verificar se o número é positivo e maior que 15</h2>
+
+  <label>Digite um número: <input type="number" id="numero"></label>
+  <button onclick="verificarNumero()">Verificar</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function verificarNumero() {
+      const numero = parseFloat(document.getElementById("numero").value);
+      const resultado = document.getElementById("resultado");
+
+      if (numero > 0 && numero > 15) {
+        resultado.textContent = "O número é positivo e maior que 15.";
+      } else {
+        resultado.textContent = "O número NÃO atende às duas condições.";
+      }
+    }
+  </script>
+
+</body>
+</html>

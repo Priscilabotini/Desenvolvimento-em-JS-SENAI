@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Classificador de Triângulos</title>
+</head>
+<body>
+    <h2>Classificador de Triângulos</h2>
+
+    <label>Lado 1: <input type="number" id="lado1"></label><br><br>
+    <label>Lado 2: <input type="number" id="lado2"></label><br><br>
+    <label>Lado 3: <input type="number" id="lado3"></label><br><br>
+
+    <button onclick="classificarTriangulo()">Classificar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function classificarTriangulo() {
+            let lado1 = parseFloat(document.getElementById("lado1").value);
+            let lado2 = parseFloat(document.getElementById("lado2").value);
+            let lado3 = parseFloat(document.getElementById("lado3").value);
+
+            let resultado = "";
+
+            if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
+                if (lado1 === lado2 && lado2 === lado3) {
+                    resultado = "Triângulo Equilátero";
+                } else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
+                    resultado = "Triângulo Isósceles";
+                } else {
+                    resultado = "Triângulo Escaleno";
+                }
+            } else {
+                resultado = "Os valores informados não formam um triângulo válido.";
+            }
+
+            document.getElementById("resultado").textContent = resultado;
+        }
+    </script>
+</body>
+</html>
+
+
+
