@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saudação Personalizada</title>
+  </head>
+  <body>
+    <h1>Saudação Personalizada</h1>
+
+    <script>
+      function saudacaoPersonalizada(nome, horario) {
+        if (horario === "manhã") {
+          console.log("Bom dia", nome);
+        } else if (horario === "tarde") {
+          console.log("Boa tarde", nome);
+        } else if (horario === "noite") {
+            console.log('Boa noite',nome)
+        }
+      }
+      saudacaoPersonalizada('Priscila', 'manhã')
+      saudacaoPersonalizada('Fabio', 'noite')
+    </script>
+  </body>
+</html>
