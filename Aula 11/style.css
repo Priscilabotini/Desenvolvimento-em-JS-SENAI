@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* .roboto-condensed-<uniquifier> {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 1200px;
+  background: #fff;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 200;
+}
+.navigation {
+  background-color: brown;
+  color: blue;
+  height: 50px;
+
+  animation-name: navegacao;
+  animation-duration: 4s;
+}
+.navigation ul {
+  margin-top: 0;
+  list-style: nome;
+  padding-left: 0;
+  text-align: right;
+  height: 50px;
+  /* display: flex;
+  gap: 50px; */
+}
+.navigation li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 50px;
+}
+.navigation a {
+  color: #06010eea;
+  text-decoration: none;
+}
+.navigation a:hover {
+  color: aqua;
+}
+.navigation li.treeline-icon:haver {
+  cursor: pointer;
+  color: cadetblue;
+}
+.capa {
+  color: chocolate;
+}
+.capa span {
+  color: black;
+  display: block;
+  padding-left: 0;
+  text-align: center;
+}
+.capa {
+  display: inline-block;
+  height: 500px;
+}
+.profile-pic {
+  width: 40%;
+  text-align: center;
+}
+.profile-pic img {
+  width: 450px;
+  border-radius: 80px;
+  margin-top: 200px;
+
+  animation-name: profile-capa;
+  animation-duration: 2s;
+}
+.profile-title {
+  vertical-align: top;
+  width: 50;
+  animation-name: titulo-capa;
+  animation-duration: 2s;
+}
+
+.profile-title h1 {
+  text-transform: uppercase;
+  font-size: 78px;
+  margin-top: 200px;
+  font-weight: 400px;
+}
+.text_footer {
+  padding: 25px;
+  text-align: center;
+  color: blue;
+}
+
+.rodape {
+  background: brown;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.field {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-family: "Roboto Condensed";
+}
+.textarea {
+  height: 100px;
+}
+.main {
+  padding-top: 90px;
+  padding-right: 180px;
+  padding-left: 100px;
+  padding-bottom: 80px;
+  animation-duration: 2s;
+  animation-name: conteudo;
+}
+.main {
+  color: blue;
+  font-weight: normal;
+}
+.main {
+  font-size: 13px;
+  color: rgb(5, 78, 33);
+  text-transform: uppercase;
+}
+.caminho ul {
+  list-style: nome;
+  padding-left: 0;
+  color: blue;
+}
+.caminho li {
+  display: inline-block;
+}
+@keyframes profile-capa {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes titulo-capa {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes conteudo {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes navegacao {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media(max-width:1000px){
+.navigation li{
+    display: none;
+}    
+.navigation li.treeine-icom{
+    display: inline-block;
+}
+.profile-pic{
+    widht:100%
+}
+
+
+main{
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-bottom: 40px;
+    padding-left: 5%;
+}
+.menujs{
+    background-color: #000;
+    height: auto;
+
+}
+.menujs ul{
+    height: auto;
+    text-align: center;
+    padding: 15%;
+    padding-left: 15%;
+
+}
+menu li{
+    display: block;
+    border-bottom: solid chartreuse;
+    
+}
+}
